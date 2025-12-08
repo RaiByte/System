@@ -1,0 +1,9 @@
+ALTER TABLE User_Profile
+ADD COLUMN user_id INT AFTER ProfileID;
+ALTER TABLE User_Profile
+DROP COLUMN FullName;
+
+ALTER TABLE User_Profile
+ADD COLUMN LastName VARCHAR(255) AFTER user_id,
+ADD COLUMN First_Name VARCHAR(255) AFTER LastName,
+ADD COLUMN Middle_Initial VARCHAR(10) AFTER First_Name;

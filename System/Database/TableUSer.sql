@@ -1,0 +1,7 @@
+CREATE TABLE User_Profile(
+ProfileID INT auto_increment PRIMARY KEY NOT NULL,
+FullName VARCHAR(50) NOT NULL,
+Address VARCHAR(100) NOT NULL,
+Contact_Number VARCHAR(12) NOT NULL,
+Email VARCHAR(100) NOT NULL
+);

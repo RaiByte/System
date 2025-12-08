@@ -1,0 +1,8 @@
+CREATE TABLE incident_reports(
+Incident_id int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+User_id INT NOT NULL,
+IncidentType VARCHAR(50) NOT NULL,
+Location VARCHAR(50) NOT NULL,
+DateAndTime DATETIME NOT NULL,
+Description VARCHAR(500)
+);
