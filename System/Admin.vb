@@ -23,6 +23,14 @@ Public Class Admin
 
             incidentReportAdapter.Fill(incidentReportDataTable)
             AdminTB.DataSource = incidentReportDataTable
+            For Each column As DataGridViewColumn In AdminTB.Columns
+                column.ReadOnly = True
+            Next
+
+            If AdminTB.Columns.Contains("Incident_id") Then
+                AdminTB.Columns("Incident_id").Visible = False
+            End If
+
 
         Catch ex As Exception
             MessageBox.Show($"Error loading Incident Reports data: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -31,19 +39,21 @@ Public Class Admin
 
 
 
-    Private Sub dgvIncidentReports_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles AdminTB.CellContentClick
+    Private Sub dgvIncidentReports_CellContentClick(sender As Object, e As EventArgs) Handles AdminTB.CellContentClick
 
+    End Sub
+    Private Sub AdminTB_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles AdminTB.CellClick
+        If e.RowIndex >= 0 Then
+            ' 1. Get the ID from the clicked row
+            Dim incidentId As Integer = CInt(AdminTB.Rows(e.RowIndex).Cells("Incident_id").Value)
 
+            MessageBox.Show($"Clicked row for Incident ID: {incidentId}. Opening full report view...", "Cell Clicked", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-        If e.RowIndex >= 0 AndAlso e.ColumnIndex = 0 Then
-
-            Dim incidentId As Integer = AdminTB.Rows(e.RowIndex).Cells("Incident_id").Value
-            MessageBox.Show($"Clicked row with Incident ID: {incidentId}", "Cell Clicked")
+            ' 2. Correctly instantiate the form and PASS THE ID to the constructor
+            Dim details As New IncidentDetailsForm(incidentId)
+            details.Show()
         End If
     End Sub
-
-
-
     Private Sub Usersbtn_Click(sender As Object, e As EventArgs) Handles Usersbtn.Click
         Dim userForm As New UsersTable()
         userForm.Show()
@@ -51,6 +61,7 @@ Public Class Admin
     End Sub
 
     Private Sub Updatebtn_Click(sender As Object, e As EventArgs) Handles Updatebtn.Click
+
         If incidentReportDataTable Is Nothing Then
             MessageBox.Show("No incident reports data loaded.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
@@ -64,7 +75,8 @@ Public Class Admin
 
         If changesTable Is Nothing Then
 
-            MessageBox.Show("You haven't made any updates to save.", "No Changes Detected", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+
+            MessageBox.Show("You haven't made any updates to save because editing is disabled in this view.", "No Changes Detected", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
 
@@ -134,7 +146,17 @@ Public Class Admin
     End Sub
 
     Private Sub Refreshbtn_Click(sender As Object, e As EventArgs) Handles Refreshbtn.Click
+        If Not incidentReportDataTable Is Nothing Then
+            incidentReportDataTable.Clear()
+        End If
+
         LoadIncidentReportsData()
         MessageBox.Show("Report data has been refreshed.", "Data Refreshed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub UpdateProfbtn_Click(sender As Object, e As EventArgs) Handles UpdateProfbtn.Click
+        Dim update As New UpdateProfile()
+        update.Show()
+        Me.Close()
     End Sub
 End Class

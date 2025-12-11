@@ -297,7 +297,7 @@ Partial Class Profile
         Me.Guna2ShadowPanel1.Controls.Add(Me.Numbertxtbox)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Numberlbl)
         Me.Guna2ShadowPanel1.FillColor = System.Drawing.Color.White
-        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(56, 131)
+        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(57, 126)
         Me.Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
         Me.Guna2ShadowPanel1.Radius = 10
         Me.Guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black

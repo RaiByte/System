@@ -145,6 +145,12 @@
     <Compile Include="Contacts.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ForgotPassword.Designer.vb">
+      <DependentUpon>ForgotPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,12 @@
       <DependentUpon>HomePage.vb</DependentUpon>
     </Compile>
     <Compile Include="HomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncidentDetailsForm.Designer.vb">
+      <DependentUpon>IncidentDetailsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IncidentDetailsForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.vb">
@@ -192,7 +204,19 @@
     <Compile Include="Report.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reset.Designer.vb">
+      <DependentUpon>Reset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reset.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ThemeManager.vb" />
+    <Compile Include="UpdateProfile.Designer.vb">
+      <DependentUpon>UpdateProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UsersTable.Designer.vb">
       <DependentUpon>UsersTable.vb</DependentUpon>
     </Compile>
@@ -210,11 +234,17 @@
     <EmbeddedResource Include="Contacts.resx">
       <DependentUpon>Contacts.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncidentDetailsForm.resx">
+      <DependentUpon>IncidentDetailsForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
@@ -230,6 +260,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reset.resx">
+      <DependentUpon>Reset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsersTable.resx">
       <DependentUpon>UsersTable.vb</DependentUpon>

@@ -50,7 +50,7 @@ Partial Class Report
         'Descriptiontxtbox
         '
         Me.Descriptiontxtbox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Descriptiontxtbox.Location = New System.Drawing.Point(230, 299)
+        Me.Descriptiontxtbox.Location = New System.Drawing.Point(230, 283)
         Me.Descriptiontxtbox.Multiline = True
         Me.Descriptiontxtbox.Name = "Descriptiontxtbox"
         Me.Descriptiontxtbox.Size = New System.Drawing.Size(313, 68)
@@ -78,7 +78,7 @@ Partial Class Report
         '
         Me.Descriptionlbl.AutoSize = True
         Me.Descriptionlbl.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Descriptionlbl.Location = New System.Drawing.Point(54, 317)
+        Me.Descriptionlbl.Location = New System.Drawing.Point(54, 301)
         Me.Descriptionlbl.Name = "Descriptionlbl"
         Me.Descriptionlbl.Size = New System.Drawing.Size(120, 28)
         Me.Descriptionlbl.TabIndex = 4
@@ -146,7 +146,7 @@ Partial Class Report
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(163, 33)
+        Me.Label1.Location = New System.Drawing.Point(166, 33)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(270, 50)
         Me.Label1.TabIndex = 11
@@ -232,14 +232,14 @@ Partial Class Report
         Me.Howtxtbox.Location = New System.Drawing.Point(230, 196)
         Me.Howtxtbox.Multiline = True
         Me.Howtxtbox.Name = "Howtxtbox"
-        Me.Howtxtbox.Size = New System.Drawing.Size(313, 80)
+        Me.Howtxtbox.Size = New System.Drawing.Size(313, 68)
         Me.Howtxtbox.TabIndex = 13
         '
         'Wholbl
         '
         Me.Wholbl.AutoSize = True
         Me.Wholbl.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Wholbl.Location = New System.Drawing.Point(55, 417)
+        Me.Wholbl.Location = New System.Drawing.Point(55, 401)
         Me.Wholbl.Name = "Wholbl"
         Me.Wholbl.Size = New System.Drawing.Size(60, 28)
         Me.Wholbl.TabIndex = 14
@@ -248,10 +248,10 @@ Partial Class Report
         'Whotxtbox
         '
         Me.Whotxtbox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Whotxtbox.Location = New System.Drawing.Point(230, 392)
+        Me.Whotxtbox.Location = New System.Drawing.Point(230, 376)
         Me.Whotxtbox.Multiline = True
         Me.Whotxtbox.Name = "Whotxtbox"
-        Me.Whotxtbox.Size = New System.Drawing.Size(313, 73)
+        Me.Whotxtbox.Size = New System.Drawing.Size(313, 68)
         Me.Whotxtbox.TabIndex = 15
         '
         'Report

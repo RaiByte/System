@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Admin
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class UpdateProfile
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,37 +20,27 @@ Partial Class Admin
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Admin))
-        Me.AdminTB = New System.Windows.Forms.DataGridView()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UpdateProfile))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.LogOutbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
-        Me.Usersbtn = New Guna.UI2.WinForms.Guna2ImageButton()
-        Me.Refreshbtn = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.UpdateProfbtn = New Guna.UI2.WinForms.Guna2ImageButton()
+        Me.Signupbtn = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Deletebtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Updatebtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Usersbtn = New Guna.UI2.WinForms.Guna2ImageButton()
+        Me.Refreshbtn = New Guna.UI2.WinForms.Guna2ImageButton()
+        Me.UpdateTB = New System.Windows.Forms.DataGridView()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Elipse3 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        CType(Me.AdminTB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Guna2GradientPanel1.SuspendLayout()
+        CType(Me.UpdateTB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'AdminTB
-        '
-        Me.AdminTB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.AdminTB.Location = New System.Drawing.Point(9, 47)
-        Me.AdminTB.Name = "AdminTB"
-        Me.AdminTB.RowHeadersWidth = 51
-        Me.AdminTB.RowTemplate.Height = 24
-        Me.AdminTB.Size = New System.Drawing.Size(976, 472)
-        Me.AdminTB.TabIndex = 0
         '
         'Panel1
         '
@@ -61,7 +51,7 @@ Partial Class Admin
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1000, 41)
-        Me.Panel1.TabIndex = 14
+        Me.Panel1.TabIndex = 24
         '
         'LogOutbtn
         '
@@ -74,10 +64,10 @@ Partial Class Admin
         Me.LogOutbtn.FillColor = System.Drawing.Color.Empty
         Me.LogOutbtn.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.LogOutbtn.ForeColor = System.Drawing.Color.White
-        Me.LogOutbtn.Location = New System.Drawing.Point(9, 5)
+        Me.LogOutbtn.Location = New System.Drawing.Point(10, 6)
         Me.LogOutbtn.Name = "LogOutbtn"
         Me.LogOutbtn.Size = New System.Drawing.Size(100, 30)
-        Me.LogOutbtn.TabIndex = 24
+        Me.LogOutbtn.TabIndex = 23
         Me.LogOutbtn.Text = "Log out"
         '
         'Guna2ControlBox1
@@ -90,17 +80,75 @@ Partial Class Admin
         Me.Guna2ControlBox1.Size = New System.Drawing.Size(45, 29)
         Me.Guna2ControlBox1.TabIndex = 0
         '
+        'Guna2GradientPanel1
+        '
+        Me.Guna2GradientPanel1.Controls.Add(Me.Signupbtn)
+        Me.Guna2GradientPanel1.Controls.Add(Me.Deletebtn)
+        Me.Guna2GradientPanel1.Controls.Add(Me.Updatebtn)
+        Me.Guna2GradientPanel1.Controls.Add(Me.Usersbtn)
+        Me.Guna2GradientPanel1.Controls.Add(Me.Refreshbtn)
+        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 37)
+        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
+        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1066, 603)
+        Me.Guna2GradientPanel1.TabIndex = 25
+        '
+        'Signupbtn
+        '
+        Me.Signupbtn.BackColor = System.Drawing.Color.Transparent
+        Me.Signupbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Signupbtn.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.Signupbtn.HoverState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.Signupbtn.Image = CType(resources.GetObject("Signupbtn.Image"), System.Drawing.Image)
+        Me.Signupbtn.ImageOffset = New System.Drawing.Point(0, 0)
+        Me.Signupbtn.ImageRotate = 0!
+        Me.Signupbtn.Location = New System.Drawing.Point(585, 483)
+        Me.Signupbtn.Name = "Signupbtn"
+        Me.Signupbtn.PressedState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.Signupbtn.Size = New System.Drawing.Size(80, 91)
+        Me.Signupbtn.TabIndex = 25
+        '
+        'Deletebtn
+        '
+        Me.Deletebtn.BackColor = System.Drawing.Color.White
+        Me.Deletebtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Deletebtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Deletebtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Deletebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Deletebtn.FillColor = System.Drawing.Color.Red
+        Me.Deletebtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Deletebtn.ForeColor = System.Drawing.Color.White
+        Me.Deletebtn.Location = New System.Drawing.Point(808, 491)
+        Me.Deletebtn.Name = "Deletebtn"
+        Me.Deletebtn.Size = New System.Drawing.Size(180, 45)
+        Me.Deletebtn.TabIndex = 24
+        Me.Deletebtn.Text = "Delete"
+        '
+        'Updatebtn
+        '
+        Me.Updatebtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Updatebtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Updatebtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Updatebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Updatebtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Updatebtn.ForeColor = System.Drawing.Color.White
+        Me.Updatebtn.Location = New System.Drawing.Point(12, 491)
+        Me.Updatebtn.Name = "Updatebtn"
+        Me.Updatebtn.Size = New System.Drawing.Size(180, 45)
+        Me.Updatebtn.TabIndex = 23
+        Me.Updatebtn.Text = "Update"
+        '
         'Usersbtn
         '
         Me.Usersbtn.BackColor = System.Drawing.Color.Transparent
-        Me.Usersbtn.BackgroundImage = CType(resources.GetObject("Usersbtn.BackgroundImage"), System.Drawing.Image)
         Me.Usersbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Usersbtn.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
         Me.Usersbtn.HoverState.ImageSize = New System.Drawing.Size(64, 64)
         Me.Usersbtn.Image = CType(resources.GetObject("Usersbtn.Image"), System.Drawing.Image)
         Me.Usersbtn.ImageOffset = New System.Drawing.Point(0, 0)
         Me.Usersbtn.ImageRotate = 0!
-        Me.Usersbtn.Location = New System.Drawing.Point(386, 484)
+        Me.Usersbtn.Location = New System.Drawing.Point(412, 484)
         Me.Usersbtn.Name = "Usersbtn"
         Me.Usersbtn.PressedState.ImageSize = New System.Drawing.Size(64, 64)
         Me.Usersbtn.Size = New System.Drawing.Size(80, 91)
@@ -115,70 +163,21 @@ Partial Class Admin
         Me.Refreshbtn.Image = CType(resources.GetObject("Refreshbtn.Image"), System.Drawing.Image)
         Me.Refreshbtn.ImageOffset = New System.Drawing.Point(0, 0)
         Me.Refreshbtn.ImageRotate = 0!
-        Me.Refreshbtn.Location = New System.Drawing.Point(489, 484)
+        Me.Refreshbtn.Location = New System.Drawing.Point(498, 484)
         Me.Refreshbtn.Name = "Refreshbtn"
         Me.Refreshbtn.PressedState.ImageSize = New System.Drawing.Size(64, 64)
         Me.Refreshbtn.Size = New System.Drawing.Size(80, 91)
         Me.Refreshbtn.TabIndex = 18
         '
-        'Guna2GradientPanel1
+        'UpdateTB
         '
-        Me.Guna2GradientPanel1.Controls.Add(Me.UpdateProfbtn)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Deletebtn)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Updatebtn)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Usersbtn)
-        Me.Guna2GradientPanel1.Controls.Add(Me.Refreshbtn)
-        Me.Guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.Guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.Guna2GradientPanel1.Location = New System.Drawing.Point(0, 41)
-        Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
-        Me.Guna2GradientPanel1.Size = New System.Drawing.Size(1066, 603)
-        Me.Guna2GradientPanel1.TabIndex = 19
-        '
-        'UpdateProfbtn
-        '
-        Me.UpdateProfbtn.BackColor = System.Drawing.Color.Transparent
-        Me.UpdateProfbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.UpdateProfbtn.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.UpdateProfbtn.HoverState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.UpdateProfbtn.Image = CType(resources.GetObject("UpdateProfbtn.Image"), System.Drawing.Image)
-        Me.UpdateProfbtn.ImageOffset = New System.Drawing.Point(0, 0)
-        Me.UpdateProfbtn.ImageRotate = 0!
-        Me.UpdateProfbtn.Location = New System.Drawing.Point(590, 484)
-        Me.UpdateProfbtn.Name = "UpdateProfbtn"
-        Me.UpdateProfbtn.PressedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.UpdateProfbtn.Size = New System.Drawing.Size(80, 91)
-        Me.UpdateProfbtn.TabIndex = 26
-        '
-        'Deletebtn
-        '
-        Me.Deletebtn.BackColor = System.Drawing.Color.White
-        Me.Deletebtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Deletebtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Deletebtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Deletebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Deletebtn.FillColor = System.Drawing.Color.Red
-        Me.Deletebtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Deletebtn.ForeColor = System.Drawing.Color.White
-        Me.Deletebtn.Location = New System.Drawing.Point(805, 484)
-        Me.Deletebtn.Name = "Deletebtn"
-        Me.Deletebtn.Size = New System.Drawing.Size(180, 45)
-        Me.Deletebtn.TabIndex = 20
-        Me.Deletebtn.Text = "Delete"
-        '
-        'Updatebtn
-        '
-        Me.Updatebtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Updatebtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Updatebtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Updatebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Updatebtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Updatebtn.ForeColor = System.Drawing.Color.White
-        Me.Updatebtn.Location = New System.Drawing.Point(9, 484)
-        Me.Updatebtn.Name = "Updatebtn"
-        Me.Updatebtn.Size = New System.Drawing.Size(180, 45)
-        Me.Updatebtn.TabIndex = 19
-        Me.Updatebtn.Text = "Update"
+        Me.UpdateTB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.UpdateTB.Location = New System.Drawing.Point(12, 49)
+        Me.UpdateTB.Name = "UpdateTB"
+        Me.UpdateTB.RowHeadersWidth = 51
+        Me.UpdateTB.RowTemplate.Height = 24
+        Me.UpdateTB.Size = New System.Drawing.Size(976, 472)
+        Me.UpdateTB.TabIndex = 23
         '
         'Guna2Elipse1
         '
@@ -195,35 +194,36 @@ Partial Class Admin
         Me.Guna2Elipse3.BorderRadius = 20
         Me.Guna2Elipse3.TargetControl = Me.LogOutbtn
         '
-        'Admin
+        'UpdateProfile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1000, 640)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.AdminTB)
+        Me.Controls.Add(Me.UpdateTB)
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Admin"
+        Me.Name = "UpdateProfile"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Admin"
-        CType(Me.AdminTB, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "UpdateProfile"
         Me.Panel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.ResumeLayout(False)
+        CType(Me.UpdateTB, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
+
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents LogOutbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
-    Friend WithEvents AdminTB As DataGridView
+    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
+    Friend WithEvents Signupbtn As Guna.UI2.WinForms.Guna2ImageButton
+    Friend WithEvents Deletebtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Updatebtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Usersbtn As Guna.UI2.WinForms.Guna2ImageButton
     Friend WithEvents Refreshbtn As Guna.UI2.WinForms.Guna2ImageButton
-    Friend WithEvents Guna2GradientPanel1 As Guna.UI2.WinForms.Guna2GradientPanel
-    Friend WithEvents Updatebtn As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Deletebtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents UpdateTB As DataGridView
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2Elipse2 As Guna.UI2.WinForms.Guna2Elipse
-    Friend WithEvents LogOutbtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Elipse3 As Guna.UI2.WinForms.Guna2Elipse
-    Friend WithEvents UpdateProfbtn As Guna.UI2.WinForms.Guna2ImageButton
 End Class

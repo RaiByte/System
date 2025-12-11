@@ -39,6 +39,7 @@ Partial Class LoginForm
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Guna2ShadowPanel1.SuspendLayout()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -93,6 +94,7 @@ Partial Class LoginForm
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ShadowPanel1.Controls.Add(Me.LinkLabel1)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Linklogin)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Label4)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Label3)
@@ -233,6 +235,21 @@ Partial Class LoginForm
         Me.Guna2Elipse2.BorderRadius = 20
         Me.Guna2Elipse2.TargetControl = Me
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.Black
+        Me.LinkLabel1.Location = New System.Drawing.Point(331, 332)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(151, 23)
+        Me.LinkLabel1.TabIndex = 15
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Forgot Password?"
+        Me.LinkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(158, Byte), Integer))
+        '
         'LoginForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -267,4 +284,5 @@ Partial Class LoginForm
     Friend WithEvents PasswordCB2 As Guna.UI2.WinForms.Guna2CheckBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

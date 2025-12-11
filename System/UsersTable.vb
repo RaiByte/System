@@ -11,6 +11,7 @@ Public Class UsersTable
     Private Sub UsersTable_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadUsersData()
     End Sub
+
     Private Sub LoadUsersData()
         Try
             userDataAdapter = New MySqlDataAdapter("SELECT * FROM Signup", CONNECTION_STRING)
@@ -25,6 +26,21 @@ Public Class UsersTable
                 UserTB.Columns("user_id").Visible = False
             End If
 
+            ' --- START REVISIONS: Enforce Read-Only ---
+
+            ' 1. Make all columns read-only by default
+            For Each column As DataGridViewColumn In UserTB.Columns
+                column.ReadOnly = True
+            Next
+
+            ' 2. Explicitly re-enable Account_Type for editing
+            If UserTB.Columns.Contains("Account_Type") Then
+                UserTB.Columns("Account_Type").ReadOnly = False
+                UserTB.Columns("Account_Type").HeaderText = "Account Type (Editable)"
+            End If
+
+            ' --- END REVISIONS ---
+
         Catch ex As Exception
             MessageBox.Show($"Error loading Users data: {ex.Message}", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -37,7 +53,7 @@ Public Class UsersTable
             Return
         End If
 
-        UserTB.EndEdit()
+        UserTB.EndEdit() ' CRITICAL: Ensures changes are pushed to the DataTable
 
         Dim changesTable As DataTable = userDataTable.GetChanges()
 
@@ -47,6 +63,7 @@ Public Class UsersTable
         End If
 
         Try
+            ' This works because the Adapter loads data from a single table (Signup)
             Dim rowsUpdated As Integer = userDataAdapter.Update(userDataTable)
 
             MessageBox.Show($"{rowsUpdated} user records updated successfully.", "Save Complete", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -68,9 +85,13 @@ Public Class UsersTable
         End If
 
         Dim rowIndex As Integer = UserTB.SelectedRows(0).Index
-        Dim userNameToDelete As String = UserTB.Rows(rowIndex).Cells("Username").Value.ToString()
-        Dim userName As String = UserTB.Rows(rowIndex).Cells("Username").Value.ToString() ' For better confirmation message
+        Dim userName As String = UserTB.Rows(rowIndex).Cells("Username").Value.ToString()
+        Dim userId As Integer = CInt(UserTB.Rows(rowIndex).Cells("user_id").Value)
 
+        ' WARN: This delete command only targets the Signup table.
+        ' If the database relies on CASCADE DELETE to also remove the corresponding
+        ' records in the User_Profile and Incident_Reports tables, this is fine.
+        ' Otherwise, you will need a transactional delete (like in UpdateProfile.vb)
         Dim confirmResult As DialogResult = MessageBox.Show(
             $"Are you sure you want to delete user: {userName} (ID: {userId})?",
             "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -120,7 +141,17 @@ Public Class UsersTable
     End Sub
 
     Private Sub Refreshbtn_Click(sender As Object, e As EventArgs) Handles Refreshbtn.Click
+        If Not userDataTable Is Nothing Then
+            userDataTable.Clear()
+        End If
+
         LoadUsersData()
         MessageBox.Show("Report data has been refreshed.", "Data Refreshed", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub UpdateProfbtn_Click(sender As Object, e As EventArgs) Handles UpdateProfbtn.Click
+        Dim update As New UpdateProfile()
+        update.Show()
+        Me.Close()
     End Sub
 End Class

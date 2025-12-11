@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class UsersTable
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class UsersTable
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UsersTable))
@@ -36,6 +36,7 @@ Partial Class UsersTable
         Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2Elipse3 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.UpdateProfbtn = New Guna.UI2.WinForms.Guna2ImageButton()
         Me.Panel1.SuspendLayout()
         CType(Me.UserTB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GradientPanel1.SuspendLayout()
@@ -65,7 +66,7 @@ Partial Class UsersTable
         'UserTB
         '
         Me.UserTB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.UserTB.Location = New System.Drawing.Point(12, 47)
+        Me.UserTB.Location = New System.Drawing.Point(12, 52)
         Me.UserTB.Name = "UserTB"
         Me.UserTB.RowHeadersWidth = 51
         Me.UserTB.RowTemplate.Height = 24
@@ -74,6 +75,7 @@ Partial Class UsersTable
         '
         'Guna2GradientPanel1
         '
+        Me.Guna2GradientPanel1.Controls.Add(Me.UpdateProfbtn)
         Me.Guna2GradientPanel1.Controls.Add(Me.Deletebtn)
         Me.Guna2GradientPanel1.Controls.Add(Me.Updatebtn)
         Me.Guna2GradientPanel1.Controls.Add(Me.Usersbtn)
@@ -95,7 +97,7 @@ Partial Class UsersTable
         Me.Deletebtn.FillColor = System.Drawing.Color.Red
         Me.Deletebtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Deletebtn.ForeColor = System.Drawing.Color.White
-        Me.Deletebtn.Location = New System.Drawing.Point(808, 484)
+        Me.Deletebtn.Location = New System.Drawing.Point(808, 490)
         Me.Deletebtn.Name = "Deletebtn"
         Me.Deletebtn.Size = New System.Drawing.Size(180, 45)
         Me.Deletebtn.TabIndex = 24
@@ -109,7 +111,7 @@ Partial Class UsersTable
         Me.Updatebtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Updatebtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Updatebtn.ForeColor = System.Drawing.Color.White
-        Me.Updatebtn.Location = New System.Drawing.Point(12, 484)
+        Me.Updatebtn.Location = New System.Drawing.Point(12, 490)
         Me.Updatebtn.Name = "Updatebtn"
         Me.Updatebtn.Size = New System.Drawing.Size(180, 45)
         Me.Updatebtn.TabIndex = 23
@@ -124,10 +126,10 @@ Partial Class UsersTable
         Me.Usersbtn.Image = CType(resources.GetObject("Usersbtn.Image"), System.Drawing.Image)
         Me.Usersbtn.ImageOffset = New System.Drawing.Point(0, 0)
         Me.Usersbtn.ImageRotate = 0!
-        Me.Usersbtn.Location = New System.Drawing.Point(429, 503)
+        Me.Usersbtn.Location = New System.Drawing.Point(412, 490)
         Me.Usersbtn.Name = "Usersbtn"
         Me.Usersbtn.PressedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Usersbtn.Size = New System.Drawing.Size(80, 72)
+        Me.Usersbtn.Size = New System.Drawing.Size(80, 91)
         Me.Usersbtn.TabIndex = 17
         '
         'Refreshbtn
@@ -139,10 +141,10 @@ Partial Class UsersTable
         Me.Refreshbtn.Image = CType(resources.GetObject("Refreshbtn.Image"), System.Drawing.Image)
         Me.Refreshbtn.ImageOffset = New System.Drawing.Point(0, 0)
         Me.Refreshbtn.ImageRotate = 0!
-        Me.Refreshbtn.Location = New System.Drawing.Point(532, 503)
+        Me.Refreshbtn.Location = New System.Drawing.Point(498, 490)
         Me.Refreshbtn.Name = "Refreshbtn"
         Me.Refreshbtn.PressedState.ImageSize = New System.Drawing.Size(64, 64)
-        Me.Refreshbtn.Size = New System.Drawing.Size(80, 72)
+        Me.Refreshbtn.Size = New System.Drawing.Size(80, 91)
         Me.Refreshbtn.TabIndex = 18
         '
         'LogOutbtn
@@ -177,6 +179,21 @@ Partial Class UsersTable
         Me.Guna2Elipse3.BorderRadius = 20
         Me.Guna2Elipse3.TargetControl = Me.LogOutbtn
         '
+        'UpdateProfbtn
+        '
+        Me.UpdateProfbtn.BackColor = System.Drawing.Color.Transparent
+        Me.UpdateProfbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.UpdateProfbtn.CheckedState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.UpdateProfbtn.HoverState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.UpdateProfbtn.Image = CType(resources.GetObject("UpdateProfbtn.Image"), System.Drawing.Image)
+        Me.UpdateProfbtn.ImageOffset = New System.Drawing.Point(0, 0)
+        Me.UpdateProfbtn.ImageRotate = 0!
+        Me.UpdateProfbtn.Location = New System.Drawing.Point(585, 489)
+        Me.UpdateProfbtn.Name = "UpdateProfbtn"
+        Me.UpdateProfbtn.PressedState.ImageSize = New System.Drawing.Size(64, 64)
+        Me.UpdateProfbtn.Size = New System.Drawing.Size(80, 91)
+        Me.UpdateProfbtn.TabIndex = 25
+        '
         'UsersTable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -208,4 +225,5 @@ Partial Class UsersTable
     Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2Elipse2 As Guna.UI2.WinForms.Guna2Elipse
     Friend WithEvents Guna2Elipse3 As Guna.UI2.WinForms.Guna2Elipse
+    Friend WithEvents UpdateProfbtn As Guna.UI2.WinForms.Guna2ImageButton
 End Class
