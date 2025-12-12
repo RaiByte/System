@@ -22,17 +22,21 @@ Partial Class ForgotPassword
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.OTPbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.OTPbtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.Backbtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2GradientPanel1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.Guna2ShadowPanel1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2GradientPanel1
@@ -48,26 +52,6 @@ Partial Class ForgotPassword
         Me.Guna2GradientPanel1.Name = "Guna2GradientPanel1"
         Me.Guna2GradientPanel1.Size = New System.Drawing.Size(800, 579)
         Me.Guna2GradientPanel1.TabIndex = 15
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Black
-        Me.Panel1.Controls.Add(Me.Guna2ControlBox1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(800, 41)
-        Me.Panel1.TabIndex = 14
-        '
-        'Guna2ControlBox1
-        '
-        Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ControlBox1.IconColor = System.Drawing.Color.White
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(743, 6)
-        Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(45, 29)
-        Me.Guna2ControlBox1.TabIndex = 0
         '
         'Guna2ShadowPanel1
         '
@@ -86,6 +70,21 @@ Partial Class ForgotPassword
         Me.Guna2ShadowPanel1.ShadowShift = 30
         Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(611, 386)
         Me.Guna2ShadowPanel1.TabIndex = 15
+        '
+        'OTPbtn
+        '
+        Me.OTPbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.OTPbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.OTPbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.OTPbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.OTPbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.OTPbtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OTPbtn.ForeColor = System.Drawing.Color.White
+        Me.OTPbtn.Location = New System.Drawing.Point(161, 247)
+        Me.OTPbtn.Name = "OTPbtn"
+        Me.OTPbtn.Size = New System.Drawing.Size(308, 45)
+        Me.OTPbtn.TabIndex = 15
+        Me.OTPbtn.Text = "Send OTP"
         '
         'Label2
         '
@@ -117,20 +116,51 @@ Partial Class ForgotPassword
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Enter Email:"
         '
-        'OTPbtn
+        'Panel1
         '
-        Me.OTPbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.OTPbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.OTPbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.OTPbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.OTPbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(158, Byte), Integer))
-        Me.OTPbtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OTPbtn.ForeColor = System.Drawing.Color.White
-        Me.OTPbtn.Location = New System.Drawing.Point(161, 247)
-        Me.OTPbtn.Name = "OTPbtn"
-        Me.OTPbtn.Size = New System.Drawing.Size(308, 45)
-        Me.OTPbtn.TabIndex = 15
-        Me.OTPbtn.Text = "Send OTP"
+        Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.Controls.Add(Me.Backbtn)
+        Me.Panel1.Controls.Add(Me.Guna2ControlBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(800, 41)
+        Me.Panel1.TabIndex = 14
+        '
+        'Guna2ControlBox1
+        '
+        Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ControlBox1.IconColor = System.Drawing.Color.White
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(743, 6)
+        Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(45, 29)
+        Me.Guna2ControlBox1.TabIndex = 0
+        '
+        'Guna2Elipse1
+        '
+        Me.Guna2Elipse1.BorderRadius = 30
+        Me.Guna2Elipse1.TargetControl = Me.OTPbtn
+        '
+        'Backbtn
+        '
+        Me.Backbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Backbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Backbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Backbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Backbtn.FillColor = System.Drawing.Color.Red
+        Me.Backbtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Backbtn.ForeColor = System.Drawing.Color.White
+        Me.Backbtn.Location = New System.Drawing.Point(12, 6)
+        Me.Backbtn.Name = "Backbtn"
+        Me.Backbtn.Size = New System.Drawing.Size(95, 29)
+        Me.Backbtn.TabIndex = 1
+        Me.Backbtn.Text = "Back"
+        '
+        'Guna2Elipse2
+        '
+        Me.Guna2Elipse2.BorderRadius = 15
+        Me.Guna2Elipse2.TargetControl = Me.Backbtn
         '
         'ForgotPassword
         '
@@ -140,11 +170,12 @@ Partial Class ForgotPassword
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ForgotPassword"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ForgotPassword"
         Me.Guna2GradientPanel1.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
         Me.Guna2ShadowPanel1.ResumeLayout(False)
         Me.Guna2ShadowPanel1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -161,4 +192,8 @@ Partial Class ForgotPassword
     Private Sub Username2txtbox_TextChanged(sender As Object, e As EventArgs) Handles txtEmail.TextChanged
 
     End Sub
+
+    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
+    Friend WithEvents Backbtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Elipse2 As Guna.UI2.WinForms.Guna2Elipse
 End Class

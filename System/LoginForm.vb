@@ -86,4 +86,10 @@ Public Class LoginForm
     Private Sub Forgotpsswrdlink_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim forgot As New ForgotPassword
+        forgot.Show()
+        Me.Close()
+    End Sub
 End Class

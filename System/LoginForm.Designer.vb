@@ -80,7 +80,7 @@ Partial Class LoginForm
         Me.Linklogin.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Linklogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.Linklogin.LinkColor = System.Drawing.Color.Black
-        Me.Linklogin.Location = New System.Drawing.Point(265, 444)
+        Me.Linklogin.Location = New System.Drawing.Point(253, 452)
         Me.Linklogin.Name = "Linklogin"
         Me.Linklogin.Size = New System.Drawing.Size(74, 23)
         Me.Linklogin.TabIndex = 12
@@ -117,7 +117,7 @@ Partial Class LoginForm
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold)
-        Me.Label4.Location = New System.Drawing.Point(52, 444)
+        Me.Label4.Location = New System.Drawing.Point(40, 452)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(196, 23)
         Me.Label4.TabIndex = 17
@@ -239,12 +239,12 @@ Partial Class LoginForm
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
         Me.LinkLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.LinkLabel1.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel1.Location = New System.Drawing.Point(331, 332)
+        Me.LinkLabel1.Location = New System.Drawing.Point(333, 333)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(151, 23)
+        Me.LinkLabel1.Size = New System.Drawing.Size(128, 19)
         Me.LinkLabel1.TabIndex = 15
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Forgot Password?"

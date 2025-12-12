@@ -41,6 +41,10 @@ Partial Class IncidentDetailsForm
         Me.LocationTxt = New System.Windows.Forms.TextBox()
         Me.IncidentTypeTxt = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.howtxt = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.whotxt = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2ShadowPanel1.SuspendLayout()
@@ -49,17 +53,17 @@ Partial Class IncidentDetailsForm
         'Howlbl
         '
         Me.Howlbl.AutoSize = True
-        Me.Howlbl.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Howlbl.Location = New System.Drawing.Point(56, 307)
+        Me.Howlbl.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Howlbl.Location = New System.Drawing.Point(56, 274)
         Me.Howlbl.Name = "Howlbl"
-        Me.Howlbl.Size = New System.Drawing.Size(149, 28)
+        Me.Howlbl.Size = New System.Drawing.Size(156, 28)
         Me.Howlbl.TabIndex = 12
         Me.Howlbl.Text = "Date Reported:"
         '
         'DateReportedTxt
         '
-        Me.DateReportedTxt.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateReportedTxt.Location = New System.Drawing.Point(230, 302)
+        Me.DateReportedTxt.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateReportedTxt.Location = New System.Drawing.Point(230, 269)
         Me.DateReportedTxt.Multiline = True
         Me.DateReportedTxt.Name = "DateReportedTxt"
         Me.DateReportedTxt.ReadOnly = True
@@ -82,7 +86,7 @@ Partial Class IncidentDetailsForm
         Me.Closebtn.FillColor2 = System.Drawing.Color.Black
         Me.Closebtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Closebtn.ForeColor = System.Drawing.Color.White
-        Me.Closebtn.Location = New System.Drawing.Point(210, 483)
+        Me.Closebtn.Location = New System.Drawing.Point(201, 656)
         Me.Closebtn.Name = "Closebtn"
         Me.Closebtn.Size = New System.Drawing.Size(180, 45)
         Me.Closebtn.TabIndex = 9
@@ -138,6 +142,10 @@ Partial Class IncidentDetailsForm
         'Guna2ShadowPanel1
         '
         Me.Guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ShadowPanel1.Controls.Add(Me.whotxt)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.Label3)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.howtxt)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.Label2)
         Me.Guna2ShadowPanel1.Controls.Add(Me.IncidentTypeTxt)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Label1)
         Me.Guna2ShadowPanel1.Controls.Add(Me.ReporterNameTxt)
@@ -151,90 +159,130 @@ Partial Class IncidentDetailsForm
         Me.Guna2ShadowPanel1.Controls.Add(Me.Descriptionlbl)
         Me.Guna2ShadowPanel1.Controls.Add(Me.LocationTxt)
         Me.Guna2ShadowPanel1.FillColor = System.Drawing.Color.White
-        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(92, 116)
+        Me.Guna2ShadowPanel1.Location = New System.Drawing.Point(103, 54)
         Me.Guna2ShadowPanel1.Name = "Guna2ShadowPanel1"
         Me.Guna2ShadowPanel1.Radius = 10
         Me.Guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black
         Me.Guna2ShadowPanel1.ShadowShift = 20
-        Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(598, 572)
+        Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(598, 730)
         Me.Guna2ShadowPanel1.TabIndex = 17
         '
         'ReporterNameTxt
         '
-        Me.ReporterNameTxt.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ReporterNameTxt.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ReporterNameTxt.Location = New System.Drawing.Point(229, 104)
         Me.ReporterNameTxt.Name = "ReporterNameTxt"
         Me.ReporterNameTxt.ReadOnly = True
-        Me.ReporterNameTxt.Size = New System.Drawing.Size(313, 27)
+        Me.ReporterNameTxt.Size = New System.Drawing.Size(313, 38)
         Me.ReporterNameTxt.TabIndex = 16
         '
         'typelbl
         '
         Me.typelbl.AutoSize = True
-        Me.typelbl.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.typelbl.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.typelbl.Location = New System.Drawing.Point(54, 104)
         Me.typelbl.Name = "typelbl"
-        Me.typelbl.Size = New System.Drawing.Size(156, 28)
+        Me.typelbl.Size = New System.Drawing.Size(163, 28)
         Me.typelbl.TabIndex = 1
         Me.typelbl.Text = "Reporter Name:"
         '
         'Locationlbl
         '
         Me.Locationlbl.AutoSize = True
-        Me.Locationlbl.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Locationlbl.Location = New System.Drawing.Point(54, 227)
+        Me.Locationlbl.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Locationlbl.Location = New System.Drawing.Point(54, 209)
         Me.Locationlbl.Name = "Locationlbl"
-        Me.Locationlbl.Size = New System.Drawing.Size(94, 28)
+        Me.Locationlbl.Size = New System.Drawing.Size(98, 28)
         Me.Locationlbl.TabIndex = 2
         Me.Locationlbl.Text = "Location:"
         '
         'DescriptionTxt
         '
-        Me.DescriptionTxt.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DescriptionTxt.Location = New System.Drawing.Point(230, 364)
+        Me.DescriptionTxt.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DescriptionTxt.Location = New System.Drawing.Point(230, 438)
         Me.DescriptionTxt.Multiline = True
         Me.DescriptionTxt.Name = "DescriptionTxt"
         Me.DescriptionTxt.ReadOnly = True
-        Me.DescriptionTxt.Size = New System.Drawing.Size(313, 68)
+        Me.DescriptionTxt.Size = New System.Drawing.Size(313, 101)
         Me.DescriptionTxt.TabIndex = 8
         '
         'Descriptionlbl
         '
         Me.Descriptionlbl.AutoSize = True
-        Me.Descriptionlbl.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Descriptionlbl.Location = New System.Drawing.Point(54, 382)
+        Me.Descriptionlbl.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Descriptionlbl.Location = New System.Drawing.Point(54, 477)
         Me.Descriptionlbl.Name = "Descriptionlbl"
-        Me.Descriptionlbl.Size = New System.Drawing.Size(120, 28)
+        Me.Descriptionlbl.Size = New System.Drawing.Size(126, 28)
         Me.Descriptionlbl.TabIndex = 4
         Me.Descriptionlbl.Text = "Description:"
         '
         'LocationTxt
         '
-        Me.LocationTxt.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LocationTxt.Location = New System.Drawing.Point(229, 231)
+        Me.LocationTxt.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LocationTxt.Location = New System.Drawing.Point(229, 213)
         Me.LocationTxt.Name = "LocationTxt"
         Me.LocationTxt.ReadOnly = True
-        Me.LocationTxt.Size = New System.Drawing.Size(313, 27)
+        Me.LocationTxt.Size = New System.Drawing.Size(313, 38)
         Me.LocationTxt.TabIndex = 6
         '
         'IncidentTypeTxt
         '
-        Me.IncidentTypeTxt.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IncidentTypeTxt.Location = New System.Drawing.Point(230, 151)
+        Me.IncidentTypeTxt.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IncidentTypeTxt.Location = New System.Drawing.Point(230, 158)
         Me.IncidentTypeTxt.Name = "IncidentTypeTxt"
         Me.IncidentTypeTxt.ReadOnly = True
-        Me.IncidentTypeTxt.Size = New System.Drawing.Size(313, 27)
+        Me.IncidentTypeTxt.Size = New System.Drawing.Size(313, 38)
         Me.IncidentTypeTxt.TabIndex = 18
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(55, 151)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(55, 158)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(156, 28)
+        Me.Label1.Size = New System.Drawing.Size(145, 28)
         Me.Label1.TabIndex = 17
-        Me.Label1.Text = "Reporter Name:"
+        Me.Label1.Text = "Incident Type:"
+        '
+        'howtxt
+        '
+        Me.howtxt.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.howtxt.Location = New System.Drawing.Point(230, 318)
+        Me.howtxt.Multiline = True
+        Me.howtxt.Name = "howtxt"
+        Me.howtxt.ReadOnly = True
+        Me.howtxt.Size = New System.Drawing.Size(313, 101)
+        Me.howtxt.TabIndex = 20
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(54, 357)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(60, 28)
+        Me.Label2.TabIndex = 19
+        Me.Label2.Text = "How:"
+        '
+        'whotxt
+        '
+        Me.whotxt.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.whotxt.Location = New System.Drawing.Point(230, 555)
+        Me.whotxt.Multiline = True
+        Me.whotxt.Name = "whotxt"
+        Me.whotxt.ReadOnly = True
+        Me.whotxt.Size = New System.Drawing.Size(313, 64)
+        Me.whotxt.TabIndex = 22
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(56, 577)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(61, 28)
+        Me.Label3.TabIndex = 21
+        Me.Label3.Text = "Who:"
         '
         'IncidentDetailsForm
         '
@@ -244,6 +292,7 @@ Partial Class IncidentDetailsForm
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "IncidentDetailsForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "IncidentDetailsForm"
         Me.Panel1.ResumeLayout(False)
         Me.Guna2GradientPanel1.ResumeLayout(False)
@@ -270,4 +319,8 @@ Partial Class IncidentDetailsForm
     Friend WithEvents LocationTxt As TextBox
     Friend WithEvents IncidentTypeTxt As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents howtxt As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents whotxt As TextBox
+    Friend WithEvents Label3 As Label
 End Class

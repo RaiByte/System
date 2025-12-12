@@ -28,7 +28,9 @@ Public Class IncidentDetailsForm
                                         I.IncidentType, 
                                         I.Description, 
                                         I.Location, 
-                                        I.DateAndTime, 
+                                        I.DateAndTime,
+                                        I.How,
+                                        I.Who,
                                         S.Username 
                                       FROM incident_reports I 
                                       JOIN Signup S ON I.user_id = S.user_id 
@@ -45,6 +47,8 @@ Public Class IncidentDetailsForm
                             ReporterNameTxt.Text = reader("Username").ToString()
                             LocationTxt.Text = reader("Location").ToString()
                             IncidentTypeTxt.Text = reader("IncidentType").ToString()
+                            howtxt.Text = reader("How").ToString()
+                            whotxt.Text = reader("Who").ToString()
 
                             ' Format the DateTime for better display
                             Dim incidentDate As DateTime = reader.GetDateTime("DateAndTime")
@@ -69,6 +73,10 @@ Public Class IncidentDetailsForm
     End Sub
 
     Private Sub IncidentIdLbl_Click(sender As Object, e As EventArgs) Handles IncidentIdLbl.Click
+
+    End Sub
+
+    Private Sub Descriptionlbl_Click(sender As Object, e As EventArgs) Handles Descriptionlbl.Click
 
     End Sub
 End Class

@@ -22,16 +22,21 @@ Partial Class Reset
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Guna2GradientPanel1 = New Guna.UI2.WinForms.Guna2GradientPanel()
         Me.Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Me.passbx = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.OTPbtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Username2txtbox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.PasswordCB2 = New Guna.UI2.WinForms.Guna2CheckBox()
+        Me.Backbtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
         Me.Guna2GradientPanel1.SuspendLayout()
         Me.Guna2ShadowPanel1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -57,7 +62,8 @@ Partial Class Reset
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ShadowPanel1.Controls.Add(Me.TextBox1)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.PasswordCB2)
+        Me.Guna2ShadowPanel1.Controls.Add(Me.passbx)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Label3)
         Me.Guna2ShadowPanel1.Controls.Add(Me.OTPbtn)
         Me.Guna2ShadowPanel1.Controls.Add(Me.Label2)
@@ -71,6 +77,25 @@ Partial Class Reset
         Me.Guna2ShadowPanel1.Size = New System.Drawing.Size(611, 494)
         Me.Guna2ShadowPanel1.TabIndex = 15
         '
+        'passbx
+        '
+        Me.passbx.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.passbx.Location = New System.Drawing.Point(161, 285)
+        Me.passbx.Name = "passbx"
+        Me.passbx.Size = New System.Drawing.Size(308, 38)
+        Me.passbx.TabIndex = 17
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.Location = New System.Drawing.Point(154, 244)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(285, 37)
+        Me.Label3.TabIndex = 16
+        Me.Label3.Text = "Enter New Password:"
+        '
         'OTPbtn
         '
         Me.OTPbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -80,7 +105,7 @@ Partial Class Reset
         Me.OTPbtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(58, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(158, Byte), Integer))
         Me.OTPbtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OTPbtn.ForeColor = System.Drawing.Color.White
-        Me.OTPbtn.Location = New System.Drawing.Point(161, 338)
+        Me.OTPbtn.Location = New System.Drawing.Point(161, 349)
         Me.OTPbtn.Name = "OTPbtn"
         Me.OTPbtn.Size = New System.Drawing.Size(308, 45)
         Me.OTPbtn.TabIndex = 15
@@ -119,6 +144,7 @@ Partial Class Reset
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Black
+        Me.Panel1.Controls.Add(Me.Backbtn)
         Me.Panel1.Controls.Add(Me.Guna2ControlBox1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -136,24 +162,48 @@ Partial Class Reset
         Me.Guna2ControlBox1.Size = New System.Drawing.Size(45, 29)
         Me.Guna2ControlBox1.TabIndex = 0
         '
-        'TextBox1
+        'Guna2Elipse1
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(161, 285)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(308, 38)
-        Me.TextBox1.TabIndex = 17
+        Me.Guna2Elipse1.BorderRadius = 30
+        Me.Guna2Elipse1.TargetControl = Me.OTPbtn
         '
-        'Label3
+        'PasswordCB2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(154, 244)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(312, 41)
-        Me.Label3.TabIndex = 16
-        Me.Label3.Text = "Enter New Password:"
+        Me.PasswordCB2.AutoSize = True
+        Me.PasswordCB2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PasswordCB2.CheckedState.BorderRadius = 0
+        Me.PasswordCB2.CheckedState.BorderThickness = 0
+        Me.PasswordCB2.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PasswordCB2.Font = New System.Drawing.Font("Segoe UI Semibold", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordCB2.Location = New System.Drawing.Point(161, 326)
+        Me.PasswordCB2.Name = "PasswordCB2"
+        Me.PasswordCB2.Size = New System.Drawing.Size(125, 21)
+        Me.PasswordCB2.TabIndex = 18
+        Me.PasswordCB2.Text = "Show Password"
+        Me.PasswordCB2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.PasswordCB2.UncheckedState.BorderRadius = 0
+        Me.PasswordCB2.UncheckedState.BorderThickness = 0
+        Me.PasswordCB2.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        '
+        'Backbtn
+        '
+        Me.Backbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Backbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Backbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Backbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Backbtn.FillColor = System.Drawing.Color.Red
+        Me.Backbtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Backbtn.ForeColor = System.Drawing.Color.White
+        Me.Backbtn.Location = New System.Drawing.Point(12, 6)
+        Me.Backbtn.Name = "Backbtn"
+        Me.Backbtn.Size = New System.Drawing.Size(95, 29)
+        Me.Backbtn.TabIndex = 2
+        Me.Backbtn.Text = "Back"
+        '
+        'Guna2Elipse2
+        '
+        Me.Guna2Elipse2.BorderRadius = 15
+        Me.Guna2Elipse2.TargetControl = Me.Backbtn
         '
         'Reset
         '
@@ -163,6 +213,7 @@ Partial Class Reset
         Me.Controls.Add(Me.Guna2GradientPanel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Reset"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Reset"
         Me.Guna2GradientPanel1.ResumeLayout(False)
         Me.Guna2ShadowPanel1.ResumeLayout(False)
@@ -180,6 +231,10 @@ Partial Class Reset
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Guna2ControlBox1 As Guna.UI2.WinForms.Guna2ControlBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents passbx As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
+    Friend WithEvents PasswordCB2 As Guna.UI2.WinForms.Guna2CheckBox
+    Friend WithEvents Backbtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Elipse2 As Guna.UI2.WinForms.Guna2Elipse
 End Class
